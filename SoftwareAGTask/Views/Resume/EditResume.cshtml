@@ -1,0 +1,45 @@
+﻿@model SoftwareAGTask.DTOs.Resume
+
+<h2>EditResume</h2>
+
+<form asp-controller="Resume" asp-action="UpdateResume" method="post">
+    <input style="display: none" asp-for="ResumeId" value="@Model.ResumeId" />
+    <h3>Job Info</h3>
+    <label asp-for="JobInfo.JobTitle"></label>
+    <input asp-for="JobInfo.JobTitle" value="@Model.JobInfo.JobTitle" />
+
+    <label asp-for="JobInfo.Department"></label>
+    <input asp-for="JobInfo.Department" value="@Model.JobInfo.Department" />
+    <p>-------------------------------------------------------------------------------</p>
+
+    <label asp-for="PersonInfo.Person.FirstName"></label>
+    <input asp-for="PersonInfo.Person.FirstName" value="@Model.PersonInfo.Person.FirstName" />
+
+    <label asp-for="PersonInfo.Person.LastName"></label>
+    <input asp-for="PersonInfo.Person.LastName" value="@Model.PersonInfo.Person.LastName" />
+    <p>--------------------------------------------------------------------------------</p>
+
+    <h3>Contacts</h3>
+    <label asp-for="PersonInfo.Person.Phone"></label>
+    <input asp-for="PersonInfo.Person.Phone" value="@Model.PersonInfo.Person.Phone" />
+
+    <label asp-for="PersonInfo.Person.Email"></label>
+    <input asp-for="PersonInfo.Person.Email" value="@Model.PersonInfo.Person.Email" />
+    <p>--------------------------------------------------------------------------------</p>
+
+    <h3>Address</h3>
+    <label asp-for="PersonInfo.Person.Address.Street"></label>
+    <input asp-for="PersonInfo.Person.Address.Street" value="@Model.PersonInfo.Person.Address.Street" />
+
+    <label asp-for="PersonInfo.Person.Address.City"></label>
+    <input asp-for="PersonInfo.Person.Address.City" value="@Model.PersonInfo.Person.Address.City" />
+
+    <label asp-for="PersonInfo.Person.Address.Country"></label>
+    <input asp-for="PersonInfo.Person.Address.Country" value="@Model.PersonInfo.Person.Address.Country" />
+    <p>--------------------------------------------------------------------------------</p>
+
+    <input type="submit" />
+</form>
+
+<a asp-controller="Resume" asp-action="ViewResume" asp-route-resumeId="@Model.ResumeId">View Resume</a> <br />
+<a asp-controller="Resume" asp-action="Index" asp-route-resumeId="@Model.ResumeId">Back to All Resumes</a>

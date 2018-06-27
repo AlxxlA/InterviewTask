@@ -1,0 +1,45 @@
+﻿@model SoftwareAGTask.DTOs.Resume
+
+<a asp-controller="Resume" asp-action="EditResume" asp-route-resumeId="@Model.ResumeId">Edit Resume</a><br />
+<a asp-controller="Resume" asp-action="Index" asp-route-resumeId="@Model.ResumeId">Back to All Resumes</a>
+
+<h2>@Model.PersonInfo.Person.FirstName @Model.PersonInfo.Person.LastName</h2>
+
+<h2>Job Info</h2>
+<p>@Model.JobInfo.JobTitle</p>
+<p>@Model.JobInfo.Department</p>
+
+<h2>Contacts</h2>
+<p>@Model.PersonInfo.Person.Phone @Model.PersonInfo.Person.Email</p>
+
+<h2>Address: </h2>
+<p>@Model.PersonInfo.Person.Address.Street</p>
+<p>@Model.PersonInfo.Person.Address.City, @Model.PersonInfo.Person.Address.Country</p>
+
+<h2>Jobs</h2>
+@foreach (var job in Model.PersonInfo.Jobs)
+{
+    <h3>@job.JobTitle</h3>
+    <p>@job.Employer</p>
+    <p>@job.Description</p>
+    <p>@job.Period.From - @job.Period.To</p>
+    <p>----------------------------------------------</p>
+}
+
+<h2>Education</h2>
+@foreach (var education in Model.PersonInfo.Educations)
+{
+    <p>@education.Institution</p>
+    <p>@education.Institution</p>
+    <p>@education.Period.From - @education.Period.To</p>
+    <p>----------------------------------------------</p>
+}
+
+<h2>Skills</h2>
+@foreach (var skill in Model.PersonInfo.Skills)
+{
+    <p>@skill.Description</p>
+}
+
+
+<a asp-controller="Resume" asp-action="EditResume" asp-route-resumeId="@Model.ResumeId">Edit Resume</a>

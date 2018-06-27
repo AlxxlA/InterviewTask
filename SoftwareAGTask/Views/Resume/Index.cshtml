@@ -1,0 +1,18 @@
+﻿@model IEnumerable<SoftwareAGTask.DTOs.ResumeInfo>
+
+@{
+
+    if (Model != null && Model.Any())
+    {
+        <h1 class="heading">Choose Resume</h1>
+        foreach (var resume in Model)
+        {
+            <a asp-controller="Resume" asp-action="ViewResume" asp-route-resumeId="@resume.ResumeId">@resume.Name</a>
+            <br />
+        }
+    }
+    else
+    {
+        <h1 class="heading">No Resumes Found</h1>
+    }
+}

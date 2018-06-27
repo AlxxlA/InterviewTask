@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resume xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ResumeId>resume_3</ResumeId>
+  <jobInfo>
+    <jobTitle>Awesome job</jobTitle>
+    <department>Cleaning</department>
+  </jobInfo>
+  <personInfo>
+    <person>
+      <firstName>Pesho</firstName>
+      <lastName>Gosho</lastName>
+      <phone>089 246 5206</phone>
+      <email>alexander.markov.29@gmail.com</email>
+      <address>
+        <street>221B Baker Street</street>
+        <city>Sofia</city>
+        <country>Bulgaria</country>
+      </address>
+    </person>
+    <job>
+      <jobTitle>Some Job</jobTitle>
+      <employer>My employer</employer>
+      <period>
+        <from>2004-01-15T00:00:00</from>
+        <to>2010-01-01T00:00:00</to>
+      </period>
+      <description>
+        Some description
+      </description>
+    </job>
+    <job>
+      <jobTitle>Job</jobTitle>
+      <employer>Employer</employer>
+      <period>
+        <from>2000-01-15T00:00:00</from>
+        <to>2003-01-01T00:00:00</to>
+      </period>
+      <description>
+        description
+      </description>
+    </job>
+    <education>
+      <institution>University</institution>
+      <degree>Bachelor</degree>
+      <period>
+        <from>2000-01-01T00:00:00</from>
+        <to>2015-01-01T00:00:00</to>
+      </period>
+    </education>
+    <education>
+      <institution>School</institution>
+      <degree>High School degree</degree>
+      <period>
+        <from>1900-01-15T00:00:00</from>
+        <to>1999-12-31T00:00:00</to>
+      </period>
+    </education>
+    <skill />
+    <skill />
+    <skill />
+  </personInfo>
+</resume>

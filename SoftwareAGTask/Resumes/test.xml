@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resume>
+  <jobInfo>
+    <jobTitle>Awesome job</jobTitle>
+    <department>Cleaning</department>
+  </jobInfo>
+  <personInfo>
+    <person>
+      <firstName>Alexander</firstName>
+      <lastName>Alexander</lastName>
+      <phone>089 246 5206</phone>
+      <email>alexander.markov.29@gmail.com</email>
+      <address>
+        <street>221B Baker Street</street>
+        <city>Sofia</city>
+        <country>Bulgaria</country>
+      </address>
+    </person>
+    <job>
+      <jobTitle>Some Job</jobTitle>
+      <employer>My employer</employer>
+      <period>
+        <from>
+          2004-01-15
+        </from>
+        <to>
+          2010-01-01
+        </to>
+      </period>
+      <description>
+        Some description
+      </description>
+    </job>
+    <job>
+      <jobTitle>Job</jobTitle>
+      <employer>Employer</employer>
+      <period>
+        <from>
+          2000-01-15
+        </from>
+        <to>
+          2003-01-01
+        </to>
+      </period>
+      <description>
+        description
+      </description>
+    </job>
+    <education>
+      <institution>University</institution>
+      <degree>Bachelor</degree>
+      <period>
+        <from>
+          2000-01-01
+        </from>
+        <to>
+          2015-01-01
+        </to>
+      </period>
+    </education>
+    <education>
+      <institution>School</institution>
+      <degree>High School degree</degree>
+      <period>
+        <from>
+          1900-01-15
+        </from>
+        <to>
+          1999-12-31
+        </to>
+      </period>
+    </education>
+    <skill>Skill 1</skill>
+    <skill>Skill 0</skill>
+    <skill>Skill 1</skill>
+  </personInfo>
+</resume>
